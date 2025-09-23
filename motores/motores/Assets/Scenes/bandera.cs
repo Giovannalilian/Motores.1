@@ -1,11 +1,13 @@
 using System;
 using UnityEngine;
 
-public class Chave : MonoBehaviour
+public partial class Chave : MonoBehaviour
 {
     public GameObject textoDeVitoria;
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
+
         if (other.gameObject.CompareTag("Player"))
         {
             textoDeVitoria.SetActive(true);
